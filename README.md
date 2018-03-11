@@ -32,7 +32,10 @@ If you using docker, it's easy to work with Elastic stack and fluentd!
     # running docker containers by `docker-compose up -d`
     make run
 
-At the first time, `docker-compose` start creating containers. After starting containers, it's time to access Elasticsearch.
+At the first time, `docker-compose` start creating containers. 
+At the secound time  `docker-compose exec  go make migrate/go` set up DB migrate
+
+After starting containers, it's time to access Elasticsearch.
 
     $ curl http://localhost:9200
     {
